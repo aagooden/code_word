@@ -12,11 +12,13 @@ class Code_word_test < Minitest::Test
 	end	
 
 	def test_return_code_Page_Not_Found
-		assert_equal("Page Not Found", code_word(404))
+		code = 404
+		assert_equal("Page Not Found", code_word(code))
 	end	
 
 	def test_return_code_Grandpa_was_found
-		assert_equal("Grandpa was found", code_word(1942))
+		code = 1942
+		assert_equal("Grandpa was found", code_word(code))
 	end	
 
 end
